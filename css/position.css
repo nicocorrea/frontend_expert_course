@@ -1,0 +1,45 @@
+p {
+    font-size: 1.75rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+body > p {
+    background-color: lightblue;
+}
+
+section {
+    position: relative;
+}
+
+#box {
+    position: absolute;
+    /* It is by this '-20px' value that I can see the green box appearing */
+    top: -20px;
+    left: 100px;
+    width: 15rem;
+    height: 10rem;
+    border: 2px solid black;
+    background-color: lightgreen;
+}
+
+#long {
+    position: relative;
+    /* The z-index establishes the concept of stacking (similar to the position it
+    occupies as a layer. That is why I see this box on top of the green one. */
+    z-index: 2;
+    background-color: lightyellow;
+}
+
+#float {
+    position: relative;
+    /* Without this float declaration this text will come first and then the other one */
+    float: right;
+    width: 50%;
+}
+
+#text-inside {
+    position: relative;
+    
+}

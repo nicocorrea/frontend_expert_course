@@ -1,0 +1,35 @@
+#container {
+    width: 300px;
+    background-color: lightcyan;
+}
+
+#child {
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+    border: 10px solid black;
+    padding: 12px;
+    background-color: blanchedalmond;
+}
+
+/* The reason why the child box goes bigger than its parent when I remove
+the box-sizing element is because of the added pixels via border and padding. 
+
+Another way to make it work and expand it across all my website is as follows:
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 300px;
+    background-color: lightcyan;
+}
+
+#child {
+    width: 100%;
+    border: 10px solid black;
+    padding: 12px;
+    background-color: blanchedalmond;
+}
+
+*/

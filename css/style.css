@@ -1,0 +1,36 @@
+h1 {
+    size: 1.25rem;
+    color: blue;
+}
+
+/* The # is used to reference an ID that is used then in the HTML code */
+#red {
+    color: red;
+}
+
+/* The . specifies the 'heading' class inside the 'h1' tag */
+h1.heading {
+    color: brown;
+}
+
+/* This is a way to refer to an attribute inside the tag 'a'.
+If I want this rule to be applied to any other url that comes after 'google.com/',
+then I need to add the hat after href, like here */
+a[href^="https://www.google.com"] {
+    color: yellowgreen;
+}
+
+/* If I only want to influence the p tag inside footer but not the div tag inside,
+then I remove the '>' symbol, which is used here to reference to the child only */
+footer > p {
+    font-style: italic;
+}
+
+/* This means that any p tag inside the same parent where h1 is, will get these properties */
+h1 ~ p {
+    background-color: yellowgreen;
+}
+
+h2 + p {
+    background-color: violet;
+}
