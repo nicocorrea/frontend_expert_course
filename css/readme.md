@@ -15,13 +15,13 @@
 <br/>
 
 For example:
-```
+```css
 a[href="https://algoexpert.io"] { 
 	color: green;
 }
 ```
 has a weight of 11 (1 + 10), whereas the following has 12 (1 + 10 + 1):
-```
+```css
 section.links a {
 	color: red;
 }
@@ -218,8 +218,8 @@ section.links a {
 
 ##### A CSS methodology based on the idea of minimizing any repeated declarations. Rather than creating classes based on components, Atomic CSS creates utility classes based on single declarations. For example, in Atomic CSS a "margin-12" class might be created to add 12px of margin, rather than including that declaration on all of the components needing 12px of magin. **HOWEVER**, creating several classes for remaining Atomic and avoid DRY may become the worst way of writing CSS. We don't want something like the following piece of code:
 
-```
-class="text-med text-blue margin-12"
+```html
+<div class="text-med text-blue margin-12"> </div>
 ```
 
 </br>
@@ -258,7 +258,7 @@ class="text-med text-blue margin-12"
 * ##### Avoid unused code
 * ##### Minify CSS files (there are apps for this?)
 * ##### Defer non-essential CSS to prevent render blocking
-```
+```html
 <link rel="preload" as="style" href="styles.css" onload="this.onload=null; this.rel='stylesheet'">
 <noscript>
 	<link rel="stylesheet" href="styles.css">
