@@ -4,13 +4,13 @@
 
 <br/>
 
-**Inline Styles** - 1000 \
-**IDs** - 100 \
-**Classes** - 10 \
-**Pseudo-Classes** - 10 \
-**Attributes** - 10 \
-**Elements** - 1 \
-**Pseudo-Elements** - 1
+* ##### **Inline Styles** - 1000
+* ##### **IDs** - 100
+* ##### **Classes** - 10
+* ##### **Pseudo-Classes** - 10
+* ##### **Attributes** - 10
+* ##### **Elements** - 1
+* ##### **Pseudo-Elements** - 1
 
 <br/>
 
@@ -20,7 +20,7 @@ a[href="https://algoexpert.io"] {
 	color: green;
 }
 ```
-has a weight of 11 (1 + 10), whereas the following has 12 (1 + 10 + 1):
+> has a weight of 11 (1 + 10), whereas the following has 12 (1 + 10 + 1):
 ```css
 section.links a {
 	color: red;
