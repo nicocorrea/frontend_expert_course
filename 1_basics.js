@@ -3,7 +3,7 @@ const person = {
     course: 'FrontendExpert',
 }
 
-console.log(JSON.stringify(person)) // Returns a string
+console.log(JSON.stringify(person)) // Returns a string - {"name":"Conner","course":"FrontendExpert"}
 
 const map = new Map();
 map.set(123, 'hello')
