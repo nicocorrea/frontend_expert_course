@@ -1,0 +1,64 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.test {
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding-left: 0;
+    border-top: 0em;
+}
+
+body {
+    display: flex;
+    border-top: 0;
+    margin-top: 0;
+    margin-left: 20px;
+    border-color: black;
+}
+
+.rotation {
+    transform: scale(0.5);
+}
+
+.boton {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    transition: ease-in;
+    transition-duration: 500ms;
+    justify-self: right;
+}
+
+.boton:hover {
+    color: blue;
+    font-size: 5rem;
+    transition: ease-out;
+    transition-duration: 300ms;
+}
+
+.boton::after {
+    content: " pepito";
+    color: violet;
+}
+
+.boton:visited {
+    color: yellow;
+}
+
+@media screen and (max-width: 900px) {
+    .boton {
+        color: green;
+        font-size: 2rem;
+        transition: ease-in;
+        transition-duration: 200ms;
+    }
+
+    .boton:hover {
+        font-size: 2.5rem;
+        color: rgba(0, 0, 0, .2);
+    }
+}
