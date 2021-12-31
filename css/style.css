@@ -3,14 +3,14 @@ h1 {
     color: blue;
 }
 
-/* The # is used to reference an ID that is used then in the HTML code */
-#red {
-    color: red;
-}
-
 /* The . specifies the 'heading' class inside the 'h1' tag */
 h1.heading {
     color: brown;
+}
+
+/* The # is used to reference an ID that is used then in the HTML code */
+#red {
+    color: red;
 }
 
 /* This is a way to refer to an attribute inside the tag 'a'.
@@ -26,11 +26,12 @@ footer > p {
     font-style: italic;
 }
 
-/* This means that any p tag inside the same parent where h1 is, will get these properties */
+/* This influences any p tag that follows h1 tag */
 h1 ~ p {
     background-color: yellowgreen;
 }
 
+/* This influences the first p tag that follows h2 tag */
 h2 + p {
     background-color: violet;
 }
