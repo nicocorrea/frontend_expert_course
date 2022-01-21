@@ -10,7 +10,7 @@ the 'window'
 4. In an object method, 'this' refers to that object.
 5. In a constructor function, 'this' refers to the object being constructed
 6. When using events listeners, the object being listened to will be bound to 'this', assuming a
-standard function was used. For example, 'element.addEventlistener('click', func)' would bing 
+standard function was used. For example, 'element.addEventlistener('click', func)' would bind 
 'element' to 'this' inside of 'func'.
 
 Arrow functions do not create their own 'this' context, instead they retain the value of the 
