@@ -15,3 +15,5 @@ console.log(arr == arr);
 
 const ob1 = {};
 const ob2 = {};
+
+console.log(ob1 == ob2);
