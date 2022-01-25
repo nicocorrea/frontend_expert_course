@@ -91,7 +91,3 @@ scrollable.scrollTo({
     top: scrollable.querySelectorAll('p')[0].offsetTop,
     behavior: 'smooth'
 });
-
-
-
-
