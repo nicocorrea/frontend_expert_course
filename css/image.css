@@ -1,33 +1,33 @@
 #coffee {
-    width: 300px;
-    height: 300px;
-    border: 50px dashed orange;
-    padding: 100px;
-    background-image: url("../coffee.jpg");
-    /* Where the image will be cropped from based on the box model */
-    background-clip: border-box;
-    /* Where the background starts. In this case the top left corner. */
-    background-origin: border-box;
-    /* Specifies if the background should repeat if the element is larger than the background image */
-    background-repeat: no-repeat;
-    /* The first being the width and the second being the height */
-    /* background-size: 50% auto; */
-    background-size: contain;
+  width: 300px;
+  height: 300px;
+  border: 50px dashed orange;
+  padding: 100px;
+  background-image: url("../coffee.jpg");
+  /* Where the image will be cropped from based on the box model */
+  background-clip: border-box;
+  /* Where the background starts. In this case the top left corner. */
+  background-origin: border-box;
+  /* Specifies if the background should repeat if the element is larger than the background image */
+  background-repeat: no-repeat;
+  /* The first being the width and the second being the height */
+  /* background-size: 50% auto; */
+  background-size: contain;
 }
 
 /* Image Sprite is to include images in one file and use background-position
 to 'get' individual images. This improves the use of bandwidth. */
 
 #uno {
-    width: 300px;
-    height: 300px;
-    background-image: url("../coffee.jpg");
-    background-position: 300px 300px;
+  width: 300px;
+  height: 300px;
+  background-image: url("../coffee.jpg");
+  background-position: 300px 300px;
 }
 
 #dos {
-    width: 300px;
-    height: 300px;
-    background-image: url("../coffee.jpg");
-    background-position: -300px -300px;
+  width: 300px;
+  height: 300px;
+  background-image: url("../coffee.jpg");
+  background-position: -300px -300px;
 }

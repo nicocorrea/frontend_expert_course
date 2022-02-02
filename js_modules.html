@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module</title>
     <script src="17_module.js" defer></script>
     <script src="17_module1.js" defer></script>
@@ -14,24 +14,29 @@
 
     <!-- This will be used in case the browser does not support 'modules' -->
     <script src="nomoduleversion.js" nomodule></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <h1>Modules</h1>
-    <p>Check on the console in web-dev-tools and you will see the outputted text, and no 'import' 
-        was called, meaning that we added all our variables to the global namespace, which is not good.
-        We want them to be accessible within their file rather than globally, and then 
-        we import them individually.
-        <br>
-        <br>
-        <strong>Otherwise, using global namespace can case naming conflicts.</strong> 
+    <p>
+      Check on the console in web-dev-tools and you will see the outputted text,
+      and no 'import' was called, meaning that we added all our variables to the
+      global namespace, which is not good. We want them to be accessible within
+      their file rather than globally, and then we import them individually.
+      <br />
+      <br />
+      <strong
+        >Otherwise, using global namespace can case naming conflicts.</strong
+      >
     </p>
     <p>A couple of remarks for when using modules:</p>
     <ul>
-        <li>The file will be imported in strict mode by default</li>
-        <li>The <em>await</em> keyword can be used at the top level</li>
-        <li>The script will be deferred by default</li>
-        <li>The <em>this</em> will be undefined whereas in standard code <em>this</em> will be the window.</li>
+      <li>The file will be imported in strict mode by default</li>
+      <li>The <em>await</em> keyword can be used at the top level</li>
+      <li>The script will be deferred by default</li>
+      <li>
+        The <em>this</em> will be undefined whereas in standard code
+        <em>this</em> will be the window.
+      </li>
     </ul>
-</body>
+  </body>
 </html>

@@ -1,33 +1,32 @@
 /* With one colon we refer to pseudo-classes */
 
 p:nth-child(even) {
-    color: purple;
+  color: purple;
 }
 
 /* When I am hovering the mouse or clicked on it */
 input:focus {
-    outline: 2px solid blue;
+  outline: 2px solid blue;
 }
 
 /* When I stay out of the box it will check and display if valid */
 input:invalid:not(:focus) {
-    outline: 2px solid red;
+  outline: 2px solid red;
 }
 
 a:link {
-    color: green
+  color: green;
 }
 
 a:visited {
-    color: greenyellow
+  color: greenyellow;
 }
-
 
 /* With two colon we refer to pseudo-elements */
 p::first-letter {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 p::before {
-    content: ">";
+  content: ">";
 }

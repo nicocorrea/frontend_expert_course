@@ -16,25 +16,23 @@ console.log(let1); // Cannot access 'let1' before initialization
 var var1 = 0;
 let let1 = 0;
 
+function test1() {
+  var var2 = 0;
+  let let2 = 0;
 
-function test1(){
-    var var2 = 0;
-    let let2 = 0;
-
-    console.log('var2', var2); // 0
-    console.log('let2', let2); // 0
+  console.log("var2", var2); // 0
+  console.log("let2", let2); // 0
 }
 
 test1();
 
-
 function test2() {
-    if (true){
-        var var3 = 0;
-        let let3 = 0;
-    }
-    console.log('var3', var3); // 0
-    console.log('let3', let3); // let3 is not defined
+  if (true) {
+    var var3 = 0;
+    let let3 = 0;
+  }
+  console.log("var3", var3); // 0
+  console.log("let3", let3); // let3 is not defined
 }
 
 test2();

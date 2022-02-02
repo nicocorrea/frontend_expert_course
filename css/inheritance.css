@@ -1,15 +1,14 @@
 main {
-    color: red;
-    border: 2px solid black;
+  color: red;
+  border: 2px solid black;
 }
 
 button {
-    all: unset;
-    /* all: inherit;
+  all: unset;
+  /* all: inherit;
     all: initial; */
 }
 
 p {
-    color: initial;
+  color: initial;
 }
-

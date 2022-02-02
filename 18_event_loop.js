@@ -64,15 +64,15 @@ operations, forcing future chunks to move to the end of the task queue.
 */
 
 function logOne() {
-    console.log("1");
+  console.log("1");
 }
 
 function main() {
-    setTimeout(logOne, 0);
-    Promise.resolve(2)
-        .then(val => val * 2)
-        .then(console.log);
-    console.log('3');
+  setTimeout(logOne, 0);
+  Promise.resolve(2)
+    .then((val) => val * 2)
+    .then(console.log);
+  console.log("3");
 }
 
 main();
@@ -80,4 +80,4 @@ main();
 const a = performance.now();
 const b = performance.now();
 
-console.log(b-a);
+console.log(b - a);

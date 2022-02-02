@@ -1,19 +1,19 @@
-function sum (a, b, c) {
-    return a + b + c;
+function sum(a, b, c) {
+  return a + b + c;
 }
 
 function curry(func) {
-    return function(a) {
-        return function(b) {
-            return function(c) {
-                return func(a, b, c);
-            }   
-        }
-    }
+  return function (a) {
+    return function (b) {
+      return function (c) {
+        return func(a, b, c);
+      };
+    };
+  };
 }
 
-function curry_better(func){
-    return (a) => (b) => (c) => func(a, b, c);
+function curry_better(func) {
+  return (a) => (b) => (c) => func(a, b, c);
 }
 
 const curriedSum = curry(sum);

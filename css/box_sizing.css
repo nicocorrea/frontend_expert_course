@@ -1,14 +1,14 @@
 #container {
-    width: 300px;
-    background-color: lightcyan;
+  width: 300px;
+  background-color: lightcyan;
 }
 
 #child {
-    box-sizing: border-box;
-    /* box-sizing: content-box; */
-    border: 10px solid black;
-    padding: 12px;
-    background-color: blanchedalmond;
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+  border: 10px solid black;
+  padding: 12px;
+  background-color: blanchedalmond;
 }
 
 /* The reason why the child box goes bigger than its parent when I remove

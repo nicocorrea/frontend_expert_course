@@ -62,7 +62,7 @@ async function main_post() {
       //     'Content-Type': 'application/json; charset=utf-8',
       // }
       headers: header,
-      signal: abortController // This will kill the request if it takes more than 2 seconds
+      signal: abortController, // This will kill the request if it takes more than 2 seconds
     });
     console.log(response.status);
     const text = await response.text();

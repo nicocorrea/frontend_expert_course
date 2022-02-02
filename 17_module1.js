@@ -1,9 +1,9 @@
 function algoExpert() {
-    console.log('AlgoExpert is the best!');
+  console.log("AlgoExpert is the best!");
 }
 
-function frontendExpert(){
-    console.log('FrontendExpert is the best!');
+function frontendExpert() {
+  console.log("FrontendExpert is the best!");
 }
 
 /*
@@ -17,4 +17,3 @@ from the global namespace.
 })();
 
 */
-

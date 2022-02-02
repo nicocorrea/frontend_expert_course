@@ -108,12 +108,11 @@ if (shouldRunCode) {
 // To this...
 shouldRunCode && logWorld();
 
-
 // from a quiz exercise. Remember, the "...args" is unpacking the list
 function debounce(callback) {
   return function (...args) {
-      callback(...args);
-  }
+    callback(...args);
+  };
 }
 
 function test(...args) {

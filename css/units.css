@@ -1,37 +1,37 @@
 html {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 p {
-    width: 60ch;
-    font-family:fantasy;
+  width: 60ch;
+  font-family: fantasy;
 }
 
 #parent {
-    font-size: 1.5rem;
-    width: 75%;
-    border: 2px solid black;
+  font-size: 1.5rem;
+  width: 75%;
+  border: 2px solid black;
 }
 
 #red {
-    font-size: 1em;
-    width: 50%;
-    background-color: red;
+  font-size: 1em;
+  width: 50%;
+  background-color: red;
 }
 
 #blue {
-    font-size: 1rem;
-    width: 50vw;
-    background-color:rgba(57, 113, 169, 0.5);
+  font-size: 1rem;
+  width: 50vw;
+  background-color: rgba(57, 113, 169, 0.5);
 }
 
 #green {
-    font-size: 16px;
-    width: 10rem;
-    background-color: #F77F00;
+  font-size: 16px;
+  width: 10rem;
+  background-color: #f77f00;
 }
 
 div {
-    margin: 10px;
-    color: white;
+  margin: 10px;
+  color: white;
 }

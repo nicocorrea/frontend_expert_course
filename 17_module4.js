@@ -1,11 +1,10 @@
 export function algoExpert2() {
-    console.log('AlgoExpert is the best!');
+  console.log("AlgoExpert is the best!");
 }
 
-export function frontendExpert2(){
-    console.log('FrontendExpert is the best!');
+export function frontendExpert2() {
+  console.log("FrontendExpert is the best!");
 }
-
 
 /*
 I can also do....

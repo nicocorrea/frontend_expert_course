@@ -1,39 +1,39 @@
 body {
-    display: grid;
-    /* I can place the alias of the column in brackets */
-    grid-template-columns: [left] 3fr [middle] 1fr [right];
-    /* This fr means fraction, and helps to be responsive */
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
-    /* To add space between the boxes */
-    gap: 10px;
-    /* justify-items: center;
+  display: grid;
+  /* I can place the alias of the column in brackets */
+  grid-template-columns: [left] 3fr [middle] 1fr [right];
+  /* This fr means fraction, and helps to be responsive */
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  /* To add space between the boxes */
+  gap: 10px;
+  /* justify-items: center;
     align-items: center; */
-    /* place-items: center; declaration replaces both above */
+  /* place-items: center; declaration replaces both above */
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 main {
-    /* I can use flex display type to nest grids.
+  /* I can use flex display type to nest grids.
     display: flex; */
-    grid-area: main;
-    justify-self: center;
+  grid-area: main;
+  justify-self: center;
 }
 
 aside {
-    grid-area: aside;
+  grid-area: aside;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 body > * {
-    border: 2px solid blue;
+  border: 2px solid blue;
 }

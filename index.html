@@ -1,176 +1,179 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1" /> <!-- Mainly used for mobile devices and avoid artifical scaling -->
-    <title>AlgoExpert Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Mainly used for mobile devices and avoid artifical scaling -->
+  <title>AlgoExpert Test</title>
 
-    <link rel="icon" href="cv.png" /> <!-- Logo -->
+  <link rel="icon" href="cv.png" />
+  <!-- Logo -->
 
-    <base href="https://google.com" />
+  <base href="https://google.com" />
 
-    <meta name="author" content="Nicolas Correa" />
-    <meta name="description" content="Curriculum Vitae" />
-
+  <meta name="author" content="Nicolas Correa" />
+  <meta name="description" content="Curriculum Vitae" />
 </head>
 <body>
-    <a href="/content">Back home</a>
+  <a href="/content">Back home</a>
 
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <p>Paragraph 1</p>
-    <hr>
-    <img src="coffee.jpg" alt="coffee" s/>
-    <ul>
-        <li>Natalia</li>
-        <li>Pedro</li>
-        <li>Adriana</li>
-    </ul>
-    <hr>
-    <pre>First line
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <p>Paragraph 1</p>
+  <hr />
+  <img src="coffee.jpg" alt="coffee" s />
+  <ul>
+    <li>Natalia</li>
+    <li>Pedro</li>
+    <li>Adriana</li>
+  </ul>
+  <hr />
+  <pre>
+First line
 second line
 third line.
-    </pre>
-    <label>Your favorite fruit is:</label>
-    <input type='text' name="fruit" list="fruits">
-    <datalist id="fruits">
-        <option value="Banana">Banana</option>
-        <option value="Apple">Apple</option>
-    </datalist>
+    </pre
+  >
+  <label>Your favorite fruit is:</label>
+  <input type="text" name="fruit" list="fruits" />
+  <datalist id="fruits">
+    <option value="Banana">Banana</option>
+    <option value="Apple">Apple</option>
+  </datalist>
 
-    <!-- Tables -->
-    <table>
-        <caption>Budget</caption>
+  <!-- Tables -->
+  <table>
+    <caption>
+      Budget
+    </caption>
 
-        <colgroup>
-            <col span="2" style="background-color: aqua;"/> <!-- Better to create a class though and make it in CSS -->
-        </colgroup>
+    <colgroup>
+      <col span="2" style="background-color: aqua" />
+      <!-- Better to create a class though and make it in CSS -->
+    </colgroup>
 
-        <thead>
-            <tr>
-                <th scope="col">Category</th>
-                <th scope="col">Budget</th>
-                <th scope="col">Spending</th>
-            </tr>
-        </thead>
-       <tbody>
-            <tr>
-                <th scope="row">Food</th>
-                <td>$200</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <th scope="row">Entertainment</th>
-                <td>$250</td>
-                <td>$300</td>
-            </tr>
-       </tbody>
-       <tfoot>
-           <tr>
-               <th>Total</th>
-               <td>$450</td>
-               <td>$400</td>
-           </tr>
-       </tfoot>
-    </table>
+    <thead>
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Budget</th>
+        <th scope="col">Spending</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Food</th>
+        <td>$200</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <th scope="row">Entertainment</th>
+        <td>$250</td>
+        <td>$300</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <td>$450</td>
+        <td>$400</td>
+      </tr>
+    </tfoot>
+  </table>
 
-    <!-- Forms -->
-    <form>
-        <label for="username">Username</label>
-        <input 
-            id="username"
-            type="text"
-            placeholder="Enter your username"
-            name="username"
-            required /> <!-- Use of 'for' and 'id' to have the references and easiness to read -->
-        
-        <label for="password">Password</label>
-        <input 
-            id="password"
-            type="password"
-            placeholder="Enter your password"
-            name="password"
-            minlength="6" />
+  <!-- Forms -->
+  <form>
+    <label for="username">Username</label>
+    <input
+      id="username"
+      type="text"
+      placeholder="Enter your username"
+      name="username"
+      required
+    />
+    <!-- Use of 'for' and 'id' to have the references and easiness to read -->
 
-        <input type="date" />
+    <label for="password">Password</label>
+    <input
+      id="password"
+      type="password"
+      placeholder="Enter your password"
+      name="password"
+      minlength="6"
+    />
 
-        <fieldset>
-            <legend>Choose your animal</legend>
+    <input type="date" />
 
-            <label for="dog">Dog</label>
-            <input id="dog" type="radio" name="animal" value="dog" />
-            
-            <label for="cat">Cat</label>
-            <input id="cat" type="radio" name="animal" value="cat" />
-    
-            <label for="horse">Horse</label>
-            <input id="horse" type="radio" name="animal" value="horse" />    
-        </fieldset>
+    <fieldset>
+      <legend>Choose your animal</legend>
 
-        <button>Submit</button>
-    </form>
+      <label for="dog">Dog</label>
+      <input id="dog" type="radio" name="animal" value="dog" />
 
-    <!-- WAI-ARIA has a set of group of roles, used to define the purpose of the element. 
+      <label for="cat">Cat</label>
+      <input id="cat" type="radio" name="animal" value="cat" />
+
+      <label for="horse">Horse</label>
+      <input id="horse" type="radio" name="animal" value="horse" />
+    </fieldset>
+
+    <button>Submit</button>
+  </form>
+
+  <!-- WAI-ARIA has a set of group of roles, used to define the purpose of the element. 
     These can be broken down into a few main subgroups: -->
-        
-        <!-- Landmark Roles: Major content areas, navigational landmarks. -->
-        <!-- Examples: banner, main, navigation -->
-        <div role="banner">
-            <h1>My Accessible Webpage</h1>
-        </div>
 
-        <!-- Structure Roles: Document structure information. -->
-        <!-- Examples: tooltip, list, table -->
-        <section role="list">
-            <div role="listitem">First item</div>
-            <div role="listitem">Second item</div>
-            <div role="listitem">Third item</div>
-        </section>
-        
-        <!-- Widget Roles: Interactive elements. -->
-        <!-- Examples: tab, searchbox, button -->
-        <div role="button">
-            Click me!
-        </div>
+  <!-- Landmark Roles: Major content areas, navigational landmarks. -->
+  <!-- Examples: banner, main, navigation -->
+  <div role="banner">
+    <h1>My Accessible Webpage</h1>
+  </div>
 
-        <!-- Window Roles: Sub-windows in the browser. -->
-        <!-- Examples: dialog, alert dialog -->
-        <div role="dialog" aria-labelledby="title">
-            <h2 id="title">Successfuly saved changes</h2>
-            <button>Dismiss</button>
-        </div>
+  <!-- Structure Roles: Document structure information. -->
+  <!-- Examples: tooltip, list, table -->
+  <section role="list">
+    <div role="listitem">First item</div>
+    <div role="listitem">Second item</div>
+    <div role="listitem">Third item</div>
+  </section>
 
-        <!-- Live Region Roles: Regions with dynamically changing content. -->
-        <!-- Examples: timer, log, alert -->
-        <ol role="log">
-            <li>Chat message 1</li>
-            <li>Chat message 2</li>
-            <li>Chat message 3</li>
-        </ol>
-        
-        <!-- Aria Live -->
-        <!-- Dynamic content & importance 
+  <!-- Widget Roles: Interactive elements. -->
+  <!-- Examples: tab, searchbox, button -->
+  <div role="button">Click me!</div>
+
+  <!-- Window Roles: Sub-windows in the browser. -->
+  <!-- Examples: dialog, alert dialog -->
+  <div role="dialog" aria-labelledby="title">
+    <h2 id="title">Successfuly saved changes</h2>
+    <button>Dismiss</button>
+  </div>
+
+  <!-- Live Region Roles: Regions with dynamically changing content. -->
+  <!-- Examples: timer, log, alert -->
+  <ol role="log">
+    <li>Chat message 1</li>
+    <li>Chat message 2</li>
+    <li>Chat message 3</li>
+  </ol>
+
+  <!-- Aria Live -->
+  <!-- Dynamic content & importance 
             off: don't announce changes
             polite: announce changes when idle
             assertive: announce changes as soon as possible
         -->
-        <div aria-live="polite">
-            My content will change!
-        </div>
+  <div aria-live="polite">My content will change!</div>
 
-    <!-- Properties: Extra meaning and characteristics of the element, such as labels.
+  <!-- Properties: Extra meaning and characteristics of the element, such as labels.
         aria-label: label not visible on UI
         aria-labelledby: another element as a label, passed by ID
         aria-description: more detail than labels
         aria-describedby: another element as a description, passed by ID    
     -->
-    <div role="dialog" aria-labelledby="title">
-        <h2 id="title">Successfuly saved changes</h2>
-        <button>Dismiss</button>
-    </div>
+  <div role="dialog" aria-labelledby="title">
+    <h2 id="title">Successfuly saved changes</h2>
+    <button>Dismiss</button>
+  </div>
 
-    <!-- States: Current state of the element, such as if it is disabled.
+  <!-- States: Current state of the element, such as if it is disabled.
         aria-checked: Checkbox state
         aria-disabled: element is disabled
         aria-expanded: expanded or collapsed element
@@ -178,8 +181,5 @@ third line.
         aria-pressed: toggle currently "pressed"
         aria-selected: element is "selected"
     -->
-    <div role="checkbox" aria-checked="true">
-        I'm checked!
-    </div>
-
+  <div role="checkbox" aria-checked="true">I'm checked!</div>
 </body>
