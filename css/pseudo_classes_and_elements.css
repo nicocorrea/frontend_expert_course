@@ -30,3 +30,7 @@ p::first-letter {
 p::before {
   content: ">";
 }
+
+p:first-of-type {
+  color: blue;
+}

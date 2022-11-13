@@ -20,9 +20,16 @@ a[href^="https://www.google.com"]
 {
   color: yellowgreen;
 }
+/* Also, if I use [type] it will select all elements with the 'type' attribute set. */
 
-/* If I only want to influence the p tag inside footer but not the div tag inside,
-then I remove the '>' symbol, which is used here to reference to the child only */
+/* Be reminded that there are other attribute selectors, like follow:
+
+[href*="www.google.com"] will select all values that contain the value
+[href$="google.com"] will select all values that end with the value. */
+
+/* If I only want to influence the p tag inside footer but not the p tag inside a div
+that is inside the footer, then I use the > sign. HOWEVER, if I want to influence 
+all the p tags inside the footer then I remove the > sign. */
 footer > p {
   font-style: italic;
 }
@@ -32,7 +39,8 @@ h1 ~ p {
   background-color: yellowgreen;
 }
 
-/* This influences the first p tag that follows h2 tag */
+/* This influences the first p tag that follows h2 tag, in other words the adjacent
+ p tag to h2 */
 h2 + p {
   background-color: violet;
 }
