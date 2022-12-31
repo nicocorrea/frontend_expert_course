@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 p {
-  font-size: 1.75rem;
-  margin: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
   border: 2px solid black;
 }
 
@@ -16,10 +19,10 @@ section {
 #box {
   position: absolute;
   /* It is by this '-20px' value that I can see the green box appearing */
-  top: -20px;
+  top: -10px;
   left: 100px;
-  width: 15rem;
-  height: 10rem;
+  width: 200px;
+  height: 30px;
   border: 2px solid black;
   background-color: lightgreen;
 }
@@ -28,8 +31,9 @@ section {
   position: relative;
   /* The z-index establishes the concept of stacking (similar to the position it
     occupies as a layer. That is why I see this box on top of the green one. */
-  z-index: 2;
   background-color: lightyellow;
+  margin-top: 10px;
+  z-index: 2;
 }
 
 #float {
@@ -37,8 +41,32 @@ section {
   /* Without this float declaration this text will come first and then the other one */
   float: right;
   width: 50%;
+  margin-top: 10px;
 }
 
 #text-inside {
   position: relative;
+  margin-top: 10px;
 }
+
+/* 
+The 'position' property can take different values:
+
+-- static: The default value. The element follows the flow of the document.
+-- fixed: The element is positioned relative to the viewport and removed from the normal flow 
+of the document. The top, right, left, and bottom properties of the element can the be used to 
+move the element.
+-- relative: The element is positioned in the same place as it would be with static, however, 
+it can repositioned with top, left, and bottom relative to its natural position on the document.
+-- sticky: The element will act similar to a relative positioned document, but once it scrolls 
+off screen it will stay fixed to the screen, essentially acting as position: fixed. This is 
+particularly useful for menu bars that need to 'stick' to the top of the screen as the user scrolls.
+-- absolute: By default, this will act the same as fixed, except the element will be positioned 
+relative to the document instead of the viewport. This means that, as the page is scrolled, it will 
+move with the page rather than stay at the same viewport location. However, if any element above 
+it in the DOM, oftentimes referred to as an ancestor, has a position value other than static, then 
+it will be positioned relative to that nearest positioned ancestor.
+
+NOTE: Remember that for using the z-index property, the position cannot be 'static', it can be 
+'relative' for example. Otherwise, it won't work.
+*/

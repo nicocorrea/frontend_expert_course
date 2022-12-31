@@ -1,4 +1,5 @@
 #container {
+  /* By default 'box-sizing' property gets 'content-box' */
   width: 300px;
   background-color: lightcyan;
 }
