@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <head>
+  <!-- Determines the encoding -->
   <meta charset="utf-8" />
+
+  <!-- Mainly used for mobile devices and avoid artificial scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Mainly used for mobile devices and avoid artifical scaling -->
+
   <title>AlgoExpert Test</title>
 
-  <link rel="icon" href="cv.png" />
   <!-- Logo -->
+  <link rel="icon" href="cv.png" />
 
   <base href="https://google.com" />
 
@@ -80,7 +83,7 @@ third line.
   </table>
 
   <!-- Forms -->
-  <form>
+  <form action="/myapi" method="POST">
     <label for="username">Username</label>
     <input
       id="username"
@@ -104,6 +107,7 @@ third line.
     <input type="date" />
 
     <fieldset>
+      <!--  Used to contain fields and inputs -->
       <legend>Choose your animal</legend>
 
       <label for="dog">Dog</label>
@@ -170,7 +174,7 @@ third line.
         aria-describedby: another element as a description, passed by ID    
     -->
   <div role="dialog" aria-labelledby="title">
-    <h2 id="title">Successfuly saved changes</h2>
+    <h2 id="title">Successfully saved changes</h2>
     <button>Dismiss</button>
   </div>
 

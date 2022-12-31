@@ -1,10 +1,18 @@
+/* Play with 'block', 'inline', and 'inline-block' */
+
 p {
-  /* display: inline-block; */
-  width: 30vw;
+  /* by default the 'display' property is set to 'block' */
+  width: 50%;
+  margin: 50px 50px 50px 50px;
+  padding: 50px;
   border: 2px solid black;
 }
 
 em {
-  /* display: block; */
+  /* by default the 'display' property is set to 'inline', which adapts to its content, 
+  doesn't care about width or height */
   border: 2px solid blue;
+  padding: 20px;
+  margin: 20px; /*  Will only affect the left and right because of 'inline' display but not the top and bottom. */
+  /* Neither will it be influenced by 'width' or 'height' */
 }
